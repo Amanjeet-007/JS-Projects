@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(40, 37, 37);
+    color: rgb(149, 255, 87);
+}
+main{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(130, 55, 32);
+    border-radius: 10px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h1,p,input,button{
+    margin: 10px;
+}
+button{
+    padding: 5px 12px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 0 solid ;
+}
+button:active{
+    border: 2px solid white;
+    transition: .2s;
+    box-shadow: 2px 2px 5px rgb(33, 18, 18);
+}
+.message{
+    height: 20px;
+    color: red;
+}
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+    color: white;
+
+}
+.days ,.months,.years{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
