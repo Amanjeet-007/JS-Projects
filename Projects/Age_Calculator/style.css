@@ -9,13 +9,14 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(40, 37, 37);
-    color: rgb(149, 255, 87);
+    background-color: rgb(172, 165, 165);
+    color: rgb(6, 27, 110);
 }
 main{
     height: 500px;
     width: 500px;
-    background-color: rgb(130, 55, 32);
+    border: 2px solid black;
+    background-color: rgba(225, 108, 73, 0.377);
     border-radius: 10px;
     font-family: sans-serif;
     display: flex;
@@ -28,13 +29,13 @@ h1,p,input,button{
 button{
     padding: 5px 12px;
     cursor: pointer;
-    background-color: black;
+    background-color: rgb(103, 11, 11);
     color: white;
     border-radius: 5px;
     border: 0 solid ;
 }
 button:active{
-    border: 2px solid white;
+    border: 2px solid rgb(33, 3, 3);
     transition: .2s;
     box-shadow: 2px 2px 5px rgb(33, 18, 18);
 }
@@ -48,14 +49,22 @@ button:active{
     justify-content: space-around;
     width: 100%;
     height: 50%;
-    color: white;
+    color: rgb(13, 66, 61);
 
 }
-.days ,.months,.years{
-    height: 50px;
-    width: 50px;
+.days ,.months,.years,.totalDay,.weeks{
+    height: 90px;
+    width: 60px;
     padding: 5px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    border: 2px solid black;
+    text-align: center;
+    background-color: white;
+    
+}
+span{
+    font-weight: 700;
+   
 }
