@@ -1,1 +1,1 @@
-This Project is Created to Calculate Your Age Or Here Also You CAn see How Many Weeks,Days You Lived till Now :)
+This Project is Created to Calculate Your Age Or Here Also You CAn see How Many Weeks,Days You Lived till Now :)![age calculator](https://github.com/user-attachments/assets/30454f2a-2e2f-4802-bab1-7c015b10944e)
