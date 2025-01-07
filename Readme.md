@@ -2,7 +2,7 @@ Hey welcome to the JavaScript Project Folder/Directory Here i Created some Mini 
 
 List Of Projects:
 
-1. Age Calculator
+1. Age Calculator 
 2. Github Profile Search
 3. Hit The Mouse Game
 4. Paragraph Generator

@@ -1,0 +1,27 @@
+html,body{
+    padding-left: 20px ;
+}
+li:first-child{
+    font-size: 20px;
+    color: brown;
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
+.box{
+    height: min-content;
+    width: min-content;
+    background-color: black;
+    color: white;
+    display: flex ;
+    padding: 4px 5px;
+    margin: 3px 0px;
+}
+.delete{
+    margin: 0px 10px;
+   height: 30px;
+}
+.iteam{
+    width: min-content;
+}
