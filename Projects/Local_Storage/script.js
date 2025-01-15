@@ -4,54 +4,47 @@ const li = document.querySelector(".li")
 
  //A array which has all index to access iteams from localStorage
 let all = []
-//if have any iteam then show
-if(all.length >= 1){
-    all.forEach((el)=>{
-        let All = localStorage.getItem(el)
-        AllIteam += `<li accesskey=${el}>
-        <div class="box">
-            <div class="iteam">${localStorage.getItem(All)}</div>
-            <button class="delete">Delete</button>
-        </div>
-    </li>`
-    li.innerHTML = AllIteam;
-
-    })
-}
-
-
+//if have any iteam then show 
 
 btn.addEventListener("click",()=>{
-    // iteams.push({[id]:iteam}) if iteams variable is avilable
-
     //if input has value then exixute the code
     if(input.value){
     //getting value from input
     let iteam = input.value;
     //assin a index for that input
-    let id = li.childNodes.length-4
-
+    let id = 
+        console.log(id)
     //Adding key(id) and value(iteam) in localStorage
     localStorage.setItem(id, iteam);
     //push same key in All array
     all.push(id)
-    if(all.length >= 1){
-        all.forEach((el)=>{
             let newIteam;
-            newIteam += `<li accesskey=${el}>
-                <div class="box">
-                    <div class="iteam">${localStorage.getItem(el)}</div>
+            newIteam += `
+            <li>
+                <div class="box" accesskey=${id}>
+                    <div class="iteam">${iteam}</div>
                     <button class="delete">Delete</button>
                 </div>
             </li>`
-            li.innerHTML = AllIteam;
+            li.innerHTML += newIteam;
             input.value = '';
-    
-        })
-    }
-    input.value = '';
     }else{
         console.log("Please Enter Some Text")
+    }
+    
+
+
+    if(all.length >= 1){
+        all.forEach((el)=>{
+            let OneByOne = localStorage.getItem(el)
+           li.innerHTML +=  `<
+           li accesskey=${el}>
+            <div class="box">
+                <div class="iteam">${OneByOne}</div>
+                <button class="delete">Delete</button>
+            </div>
+        </li>`
+        })
     }
     
 
@@ -63,7 +56,6 @@ btn.addEventListener("click",()=>{
                 localStorage.removeItem(el.parentElement.parentNode.accessKey);
                el.parentElement.parentNode.remove()
             all.splice(el.parentElement.parentNode.accessKey-1,1)
-            console.log(all)
 
         })
         })
