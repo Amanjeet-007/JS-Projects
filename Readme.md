@@ -9,4 +9,4 @@ List Of Projects:
 5. Price Range Slider
 6. Star Rating Design
 7. Temprature Calculator
-and more....
+and also here is an another repo which has some js questions and there solution with learning. by dates
