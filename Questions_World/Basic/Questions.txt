@@ -1,0 +1,2 @@
+1.  Display Current Day and Time
+2.  Print Current Window Contents
