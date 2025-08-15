@@ -1,0 +1,7 @@
+today I want to make an system that encrypt or decrypt text data like messages 
+it will like 
+i have a text and a symbol E or D 
+where E is for Encrypt the data 
+and D means Decrypt (decode) the data 
+and every time i will get an string 
+

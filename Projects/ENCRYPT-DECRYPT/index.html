@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        div{
+            display: flex;
+            max-width: 300px;
+            flex-wrap: wrap;
+        }
+        p{
+            max-width: 300px;
+        }
+    </style>
+<body>
+    <main>
+        <div class="encoder">
+            <input type="text" id="input">
+            <button class="encode">Encode</button>
+            <p class="encoded"></p>
+        </div>
+        <div class="decoder">
+            <input type="text" class="get">
+            <button class="decode">Decode</button>
+            <p class="output"></p>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
