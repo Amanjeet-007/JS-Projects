@@ -1,5 +1,9 @@
 // basic of promise
-
+new Promise((resolve,reject)=>{
+    //resolve or reject 
+})
+// if resolve the return value comes in .then(value=>console.log(value)
+// or if rejected the returned value comes in .catch(err=>console.log(err))
 
 
 // --------Write a Promise that resolves with the message "Hello, World!" after 2 seconds

@@ -1,6 +1,5 @@
 // 1.Write a function retry(fn, retries) that takes a promise-returning function fn and a number retries as arguments. The function should attempt to call fn and, if it fails, retry up to retries times before finally rejecting.
 
-{
     // let attempt = 0;
 // const exampleFunction = () => {
 //   attempt++;
@@ -17,9 +16,6 @@
 //   console.log(result); // Outputs: Success on attempt 3// }).catch(error => {
 //   console.error(error); // Will only happen if retries are exhausted
 // });
-
-} 
- 
 function retry(fn, retries) {
     return new Promise((resolve, reject) => {
       function solve() {
