@@ -221,21 +221,51 @@ selection sorting
 // // two.drive();
 
 // ----------------------------------------> duplicate value 
-function Find_Dublicate(arr) {
-    const uniqueValues = new Set();
-    const duplicateValues = new Set();
-    for (let i = 0; i < arr.length; i++) {
-       if(uniqueValues.has(arr[i])){
-        duplicateValues.add(arr[i])
-       }else{
-        uniqueValues.add(arr[i])
-       }
-    }
+// function Find_Dublicate(arr) {
+//     const uniqueValues = new Set();
+//     const duplicateValues = new Set();
+//     for (let i = 0; i < arr.length; i++) {
+//        if(uniqueValues.has(arr[i])){
+//         duplicateValues.add(arr[i])
+//        }else{
+//         uniqueValues.add(arr[i])
+//        }
+//     }
     
-    return Array.from(duplicateValues)
-}
-console.log(Find_Dublicate([2, 6, 4, 2, 7, 8, 8, 8, 5, 3, 4]))
+//     return Array.from(duplicateValues)
+// }
+// console.log(Find_Dublicate([2, 6, 4, 2, 7, 8, 8, 8, 5, 3, 4]))
 //learnings >
 /*
 SET have a has() method which returns true/false nice hai ki nahi bina koi loop layaye which helps me to solve the find Duplicate problem 😊
  */
+
+// function sort_ReZero(arr) {
+//   let left = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] !== 0) {
+//       arr[left] = arr[i];
+//       left++;
+//     }
+//   }
+//   for (let j = left; j < arr.length; j++) {
+//     arr[j] = 0;
+//   }
+
+//   return arr;
+// }
+// console.log(sort_ReZero([1,0,5,3,0,6,2]))
+
+/*
+  Function: moveZeros
+  Input: An array of numbers.
+  Output: A new array with zeros moved to the end.
+*/
+function moveZeros(arr) {
+  // your code here with the "two-pass" logic
+}
+
+// Example usage:
+const numbers = [0, 1, 0, 3, 12];
+console.log(moveZeros(numbers)); // Expected output: [1, 3, 12, 0, 0]
